@@ -14,4 +14,4 @@ Document your contributions by logging your received beacon packets in any forma
 - [ ] TBD: Visit VR3X.space
 - [ ] TBD: Read the NASA mission summary page
 - [ ] TBD: Browse the mission repo containing the entire hardware and software design files: [https://github.com/maholli/VR3X](https://github.com/maholli/VR3X)
-
+- [ ] Visit the SatNOGS DB entry request for [further modulation details](https://gitlab.com/librespacefoundation/satnogs-ops/-/issues/142)
