@@ -79,7 +79,7 @@ def parse_beacon(beacon):
 
         # Data Summary
         print('\tData Summary')
-        if cmsg.view[27] is 82: # b'R'
+        if cmsg.view[27] == 82: # b'R'
             # --- Rad Summary ---
             print('\t  └──Radiation:')
             r1 = 2.5-(int.from_bytes(cmsg.view[28:31],'big')*1.49012e-07)
@@ -106,7 +106,7 @@ def parse_beacon(beacon):
                             cmsg.view[35]-137,
                             -1*cmsg.view[36]/2))
 
-        elif cmsg.view[27] is 0xA8:
+        elif cmsg.view[27] == 0xA8:
             # --- GPS Summary ---
             print('\t  └──GPS info:')
             _time = int.from_bytes(cmsg.view[28:31],'big')
